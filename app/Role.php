@@ -9,7 +9,7 @@ class Role extends Model
 {
     public function users()
     {
-        return $this->hasMany(\App\User::class,'role_id');
+        return $this->hasMany(\App\User::class,"id");
     }
     public function get_permission_list($role_id)
     {

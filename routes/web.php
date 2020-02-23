@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['register'=>false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware'=>['auth']],function() {
@@ -42,4 +42,11 @@ Route::group(['middleware'=>['auth'],'namespace'=>'Permission'],function() {
     Route::post('/module/edit/{id?}/{cat_id?}/{msg?}', 'ModuleController@edit');
     Route::get('/module/delete/{id?}/{cat_id?}/{msg?}', 'ModuleController@delete');
     Route::post('/module/moduleUpdate/', 'ModuleController@moduleUpdate');
+
+    Route::get('/users', 'UserController@index')->name("users");
+    Route::get('/users/view', 'UserController@view');
+    Route::post('/users', 'UserController@add');
+    Route::get('/user/control/{user_id}', 'UserController@control');
+    Route::get('/user/user-edit/{user_id}', 'UserController@userEdit');
+    Route::post('/user/edit/{user_id}', 'UserController@userUpdate');
 });

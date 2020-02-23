@@ -32,6 +32,7 @@
                         <ul class="list-unstyled">
                             <li class="{{set_Submenu("module")}}"><a href="{{url("module")}}">Module</a></li>
                             <li class="{{set_Submenu("role-permission")}}"><a href="{{route("role")}}">Role Permission</a></li>
+                            <li class="{{set_Submenu("manage-user")}}"><a href="{{route("users")}}">Manage User</a></li>
                         </ul>
                     </li>
                 </ul>

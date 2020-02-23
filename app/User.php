@@ -10,14 +10,15 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
+//    /**
+//     * The attributes that are mass assignable.
+//     *
+//     * @var array
+//     */
+//    protected $fillable = [
+//        'name', 'email', 'password',
+//    ];
+    protected $guarded=[];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -39,6 +40,6 @@ class User extends Authenticatable
 
     public function role()
     {
-        return $this->belongsTo(\App\Role::class,'id');
+        return $this->belongsTo(\App\Role::class,"role_id");
     }
 }
