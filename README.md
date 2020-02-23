@@ -19,16 +19,16 @@ Version 6.0
     Run: php artisan migrate
     ==========================================
  ## Uses Instruction
-    ```php
+  ```php
     public function index()
     {
         checkPermission("users",VIEW);
-        =============
+        //=============
     }
     public function add()
     {
         checkPermission("users",ADD);
-        =============
+       // =============
     }
     
     public function edit()
@@ -40,18 +40,18 @@ Version 6.0
     public function delete()
     {
         checkPermission("users",DELETE);
-        =============
+       // =============
     }
     //for check module active or not active
          if(hasActive("user")){
-            ===================
+          //  ===================
          }
         
     //for check permission but not redirect
       if(hasPermission("users",DELETE)){
-        ===============
+        //===============
       }
-    ```
+   ```
     for customize you can change 
     app/Helpers/Utli.php
  ## Directory
