@@ -64,7 +64,7 @@ Version 6.0
   
  ## Requirements
 - [PHP >= 7.2](http://php.net/)
-- [Laravel 6.x](https://github.com/laravel/framework)
+- [Laravel 5.x|6.x](https://github.com/laravel/framework)
 
 ## About Author
 Shipan Mazumder<br>
