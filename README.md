@@ -12,3 +12,8 @@ This is a Module and Role Permission System. Admin can manage multiple user and 
 [Laravel](https://laravel.com)
 Version 6.0
 
+##About Author
+Shipan Mazumder<br>
+Full Stack Web Developer<br>
+(www.shipansm.com)
+
